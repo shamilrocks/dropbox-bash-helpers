@@ -11,7 +11,7 @@ echo "Getting Metadata from DropBox!!!!"
 echo "File $TEMPMETADATA Created!!!!"
 #put the object into new path, by calling putobject providing parameter 1 being tempmetadata, parameter 2 being updated from initial path
 echo "Pushing to Dropbox!!!"
-./putobject.sh $TEMPMETADATA "$OBJECT_PATH-$(date +%s)"
+./putobject.sh $TEMPMETADATA "$OBJECT_PATH-$(date +%s).txt"
 #confirm name by echo out to console then delete tempmetadata file
 
 echo "Cleaning Up!"
