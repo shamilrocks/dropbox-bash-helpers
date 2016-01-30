@@ -2,4 +2,5 @@
 
 #Get the metadata from the dropbox api for a file
 
-echo "Working"
+
+curl https://api.dropboxapi.com/1/metadata/auto/ -H "Authorization:Bearer $DROPBOX_ACCESS_TOKEN"
